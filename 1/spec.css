@@ -1,0 +1,28 @@
+html {
+    background-image: url(simple-background.png); background-attachment: fixed;
+}
+h1 {
+    font-weight: bold;
+     color: red;
+}
+h1 + p {
+    background-color: greenyellow;
+}
+p {
+    color: green;
+}
+
+h2 {
+    font-weight: bold; 
+    color: blue;
+}
+
+div { 
+    background-color: greenyellow;
+}
+div > p {
+    background-color: blue; color: white;
+}
+a {
+    color: black;
+}
