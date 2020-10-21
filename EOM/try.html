@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+    display: grid  ;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text";
+  
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+}
+.img {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+    <div class="column">
+        <div class="card-image"></div>
+        <div class="card">
+            <img src="vortex.jpg" alt="vortex" width=440px height=300px>
+            <h2><br><br><br>Vortex Open Source</h2>
+          <p>Vortex Open Source celebrates the summer solstice: a time of ascension, passion, and new beginnings. </p>
+        
+        </div>
+      </div>
+    </div>
+
+  <div class="column">
+    <div class="card-image"></div>
+    <div class="card">
+        <h2>Vortex Open Source</h2>
+      <p>Vortex Open Source celebrates the summer solstice: a time of ascension, passion, and new beginnings. </p>
+    
+    </div>
+  </div>
+</div>
+  
+  <div class="column">
+    <div class="card-image"></div>
+    <div class="card">
+        <h2>Vortex Open Source</h2>
+      <p>Vortex Open Source celebrates the summer solstice: a time of ascension, passion, and new beginnings. </p>
+    
+    </div>
+  </div>
+</div>
+  
+  <div class="column">
+    <div class="card-image"></div>
+    <div class="card">
+        <h2>Vortex Open Source</h2>
+      <p>Vortex Open Source celebrates the summer solstice: a time of ascension, passion, and new beginnings. </p>
+    
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
